@@ -1,3 +1,50 @@
 /* 
     General Styles
 */
+body{
+    background-image: url("https://imgs.search.brave.com/ebv9tzxhoOcd-2B-H7HBVBdR4Zydpj0VlYtiAc_K6uE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Zm9uZG8taGlwZXJl/c3BhY2lhbC0zZC1l/ZmVjdG8tdHVuZWwt/dXJkaW1icmVfMTA0/OC0xMjUyNi5qcGc_/c2VtdD1haXNfaHli/cmlk");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: yellow;
+    color: aliceblue;
+}
+
+.titulo-1{
+    border: none;
+}
+
+.logo{
+    height: 10rem;
+    width: 100%;
+}
+
+.img-logo{
+    width: inherit;
+    height: inherit;
+}
+
+.navegacion{
+    flex-wrap: wrap;
+    border-bottom: 2px solid;
+    border-color: yellow;
+}
+
+.boton{
+    border-radius: 10px;
+    width: 12rem;
+    border-color: red;
+    background-color: darkgray;
+    font-weight: bold;
+}
+
+.card{
+    background-color:peru;
+}
