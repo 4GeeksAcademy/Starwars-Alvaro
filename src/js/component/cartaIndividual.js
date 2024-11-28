@@ -1,12 +1,21 @@
 import React, { Component } from "react";
 
-export const CartaIndividual = () => (
-    <div clasName="card">
-        <img src="..." clasName="card-img-top" alt="..." />
-        <div clasName="card-body">
-            <h5 clasName="card-title">Card title</h5>
-            <p clasName="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" clasName="btn btn-primary">Go somewhere</a>
+export const CartaIndividual = ({ foto, nombre, dato1, dato2, dato3, dato4 }) => (
+    <div clasName="">
+        <div className="row container">
+            <img src={foto} className="col-md-4 img-info"
+                alt="..." />
+            <div className="col-md-8">
+                <h1 className="titulo-info ">{nombre}</h1>
+                <p>{dato1}</p>
+                <p>{dato2}</p>
+                <p>{dato3}</p>
+                <p>{dato4}</p>
+
+            </div>
+        </div>
+        <div className="">
+
         </div>
     </div>
 );

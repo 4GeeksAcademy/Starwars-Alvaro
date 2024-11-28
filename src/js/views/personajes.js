@@ -10,16 +10,19 @@ export const Personajes = ({ }) => {
 
 	const personajes = store.personajes;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{personajes.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.name} fuente="characters"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">PERSONAJES</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{personajes.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraP"
+								nombre={element.name} fuente="characters" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light pt-0">
+		<nav className="navbar fondo-nav navbar-light pt-0">
 			<Link to="/">
 				<div className="logo">
-					<img className="img-logo" src="https://imgs.search.brave.com/r8bm-WT1spDGncquBPGvD6ChyEC7j8bSqTTtQC8fkDA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvNGstc3Rhci13/YXJzLTViaW5yZWl0/OWR1MjhiaWYuanBn"
-						alt="Logo de la web" />
+					<h1 className="titulo-nav">STAR WARS</h1>
 				</div>
 			</Link>
 

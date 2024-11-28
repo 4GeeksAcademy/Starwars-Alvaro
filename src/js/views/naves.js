@@ -10,16 +10,19 @@ export const Naves = ({ }) => {
 
 	const naves = store.naves;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{naves.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.name} fuente="starships"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">NAVES</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{naves.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraN"
+								nombre={element.name} fuente="starships" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

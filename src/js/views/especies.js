@@ -10,16 +10,19 @@ export const Especies = ({ }) => {
 
 	const especies = store.especies;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{especies.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.name} fuente="species"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">EESPECIES</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{especies.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraE"
+								nombre={element.name} fuente="species" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

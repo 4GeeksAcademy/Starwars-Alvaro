@@ -5,7 +5,7 @@ export const Boton = ({ vista, titulo }) => {
 
     return (
         <div>
-            <Link to={vista}><button className="boton mt-2">{titulo}</button></Link>
+            <Link to={vista}><button className="boton">{titulo}</button></Link>
         </div>
     )
 }

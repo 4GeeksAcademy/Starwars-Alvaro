@@ -17,17 +17,11 @@ export const Home = () => {
 	return (
 
 		<div className="container">
-			<h1 className="titulo-1 mt-3">PELICULAS</h1>
 			<Pelis />
-			<h1 className="mt-3">PERSONAJES</h1>
 			<Personajes />
-			<h1 className="mt-3">PLANETAS</h1>
 			<Planetas />
-			<h1 className="mt-3">ESPECIES</h1>
 			<Especies />
-			<h1 className="mt-3">NAVES</h1>
 			<Naves />
-			<h1 className="mt-3">VEHICULOS</h1>
 			<Vehiculos />
 		</div>
 

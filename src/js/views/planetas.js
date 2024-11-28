@@ -10,16 +10,19 @@ export const Planetas = ({ }) => {
 
 	const planetas = store.planetas;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{planetas.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.name} fuente="planets"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">PLANETAS</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{planetas.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraPl"
+								nombre={element.name} fuente="planets" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

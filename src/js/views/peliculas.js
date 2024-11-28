@@ -10,16 +10,19 @@ export const Pelis = ({ }) => {
 
 	const pelis = store.pelis;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{pelis.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.properties.title} fuente="films"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">PELICULAS</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{pelis.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraPe"
+								nombre={element.properties.title} fuente="films" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

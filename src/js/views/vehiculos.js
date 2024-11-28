@@ -10,16 +10,19 @@ export const Vehiculos = ({ }) => {
 
 	const vehiculos = store.vehiculos;
 	return (
-		<div className="d-flex justify-content-center">
-			<div className="row container">
-				{vehiculos.map((element) => {				
-					
-					return (
-						<CartaDatos imagen={element.uid} 
-						nombre={element.name} fuente="vehicles"/>
-					);
-				})
-				}
+		<div className="container">
+			<h1 className="titulo-1">VEHICULOS</h1>
+			<div className="d-flex justify-content-center">
+				<div className="row container">
+					{vehiculos.map((element) => {
+
+						return (
+							<CartaDatos imagen={element.uid} direccion="infoExtraV"
+								nombre={element.name} fuente="vehicles" />
+						);
+					})
+					}
+				</div>
 			</div>
 		</div>
 	);

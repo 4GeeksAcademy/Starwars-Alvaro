@@ -14,6 +14,12 @@ import { Naves } from "./views/naves";
 import { Pelis } from "./views/peliculas";
 import { Vehiculos } from "./views/vehiculos";
 import { Navegacion } from "./component/navegacion";
+import { InfoExtraP } from "./views/infoExtraP";
+import { InfoExtraPl } from "./views/infoExtraPl";
+import { InfoExtraPe } from "./views/infoExtraPe";
+import { InfoExtraE } from "./views/infoExtraE";
+import { InfoExtraN } from "./views/infoExtraN";
+import { InfoExtraV } from "./views/infoExtraV";
 
 //create your first component
 const Layout = () => {
@@ -35,6 +41,12 @@ const Layout = () => {
 						<Route path="/naves" element={<Naves />} />
 						<Route path="/pelis" element={<Pelis />} />
 						<Route path="/vehiculos" element={<Vehiculos />} />
+						<Route path="/infoExtraP/:personaje" element={<InfoExtraP />} />
+						<Route path="/infoExtraPl/:planeta" element={<InfoExtraPl />} />
+						<Route path="/infoExtraPe/:peli" element={<InfoExtraPe />} />
+						<Route path="/infoExtraE/:especie" element={<InfoExtraE />} />
+						<Route path="/infoExtraN/:nave" element={<InfoExtraN />} />
+						<Route path="/infoExtraV/:vehiculo" element={<InfoExtraV />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />
