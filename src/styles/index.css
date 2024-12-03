@@ -65,8 +65,8 @@ a{
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-color: yellow;
-    justify-content: left;
     padding-left: 1rem;
+    padding-right: 1rem;
     height: 10rem;
     background: rgb(93, 84, 98);
     background: linear-gradient(90deg, rgba(93, 84, 98, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(27, 16, 1, 1) 100%);
@@ -90,4 +90,13 @@ a{
 }
 p{
     color: white;
+}
+
+i{
+    height: 5rem;
+    width: 5rem;
+}
+
+.lista-fav{
+    width: 13rem;
 }

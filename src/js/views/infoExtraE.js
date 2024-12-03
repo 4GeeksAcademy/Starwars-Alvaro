@@ -17,10 +17,11 @@ export const InfoExtraE = () => {
         <div>
             <CartaIndividual
                 nombre={info.name}
-                dato1={`Genero: ${info.gender}`}
-                dato2={`Año de nacimiento:${info.birth_year}`}
-                dato3={`Altura: ${info.height}, Peso: ${info.mass}`}
-                dato4={`Tiene el pelo de color ${info.hair_color}, los ojos de color ${info.eye_color}, su tono de piel es ${info.skin_color}`}
+                dato1={`Clasificacion: ${info.classification}`}
+                dato2={`Designacion: ${info.designation}`}
+                dato3={`Altura media: ${info.average_height}, Tiempo de vida medio: ${info.average_lifespan}`}
+                dato4={`Tiene el pelo de color ${info.hair_colors}, los ojos de color ${info.eye_colors}, su tono de piel es ${info.skin_colors}`}
+                dato5={`Idioma: ${info.language}`}
                 foto={`https://starwars-visualguide.com/assets/img/species/${params.especie}.jpg`} />
 
         </div>

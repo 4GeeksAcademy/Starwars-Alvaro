@@ -18,7 +18,7 @@ export const InfoExtraP = () => {
             <CartaIndividual
                 nombre={info.name}
                 dato1={`Genero: ${info.gender}`}
-                dato2={`Año de nacimiento:${info.birth_year}`}
+                dato2={`Año de nacimiento: ${info.birth_year}`}
                 dato3={`Altura: ${info.height}, Peso: ${info.mass}`}
                 dato4={`Tiene el pelo de color ${info.hair_color}, los ojos de color ${info.eye_color}, su tono de piel es ${info.skin_color}`}
                 foto={`https://starwars-visualguide.com/assets/img/characters/${params.personaje}.jpg`} />

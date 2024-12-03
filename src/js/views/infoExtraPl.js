@@ -17,10 +17,10 @@ export const InfoExtraPl = () => {
         <div>
             <CartaIndividual
                 nombre={info.name}
-                dato1={`Genero: ${info.gender}`}
-                dato2={`Año de nacimiento:${info.birth_year}`}
-                dato3={`Altura: ${info.height}, Peso: ${info.mass}`}
-                dato4={`Tiene el pelo de color ${info.hair_color}, los ojos de color ${info.eye_color}, su tono de piel es ${info.skin_color}`}
+                dato1={`Diametro: ${info.diameter}`}
+                dato2={`Diracion de un día: ${info.rotation_period}H Duracion de un año: ${info.orbital_period} días`}
+                dato3={`Gravedad: ${info.gravity}p, Cantidad de seres con vida: ${info.population}`}
+                dato4={`Clima: ${info.climate}, Terreno: ${info.terrain}, Agua en la superficie: ${info.surface_water}`}
                 foto={`https://starwars-visualguide.com/assets/img/planets/${params.planeta}.jpg`} />
 
         </div>

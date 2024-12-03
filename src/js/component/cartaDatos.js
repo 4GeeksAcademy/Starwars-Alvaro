@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
+import { BotonFavoritos } from "./botonFavoritos";
 
 export const CartaDatos = ({ nombre, imagen, fuente, direccion }) => {
 
@@ -9,7 +10,11 @@ export const CartaDatos = ({ nombre, imagen, fuente, direccion }) => {
 				<img src={`https://starwars-visualguide.com/assets/img/${fuente}/${imagen}.jpg`} className="card-img-top" alt="..." />
 				<div className="card-body">
 					<h5 className="card-title">{nombre}</h5>
-					<Link to={`/${direccion}/${imagen}`}><button className="btn btn-primary mt-4"> Descubre más </button></Link>
+					<div className="row">
+					<Link className="col-xl-9" to={`/${direccion}/${imagen}`}><button className="btn btn-primary mt-4"> Descubre más </button></Link>
+					<BotonFavoritos direccion={direccion} id={imagen} nombre={nombre}/>
+					</div>
+					
 				</div>
 			</div>
 		</div>

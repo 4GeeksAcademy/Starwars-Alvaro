@@ -16,11 +16,11 @@ export const InfoExtraPe = () => {
 
         <div>
             <CartaIndividual
-                nombre={info.name}
-                dato1={`Genero: ${info.gender}`}
-                dato2={`Año de nacimiento:${info.birth_year}`}
-                dato3={`Altura: ${info.height}, Peso: ${info.mass}`}
-                dato4={`Tiene el pelo de color ${info.hair_color}, los ojos de color ${info.eye_color}, su tono de piel es ${info.skin_color}`}
+                nombre={info.title}
+                dato1={`Producida por: ${info.producer}`}
+                dato2={`Episodio al que pertenecce: ${info.episode_id}`}
+                dato3={`Dirigida por: ${info.director}, y estrenada en: ${info.release_date}`}
+                dato4={`Inicia con el siguiente argumento: ${info.opening_crawl}`}
                 foto={`https://starwars-visualguide.com/assets/img/films/${params.peli}.jpg`} />
 
         </div>

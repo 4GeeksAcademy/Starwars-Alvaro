@@ -18,7 +18,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 			pelis:[],
 			naves:[],
 			vehiculos:[],
-			especies:[]
+			especies:[],
+			favoritos:[],
+			id_favoritos:[],
+			direccion_favoritos:[]
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -79,10 +82,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 				fetch("https://www.swapi.tech/api/species")
 					.then(res => res.json())
 					.then(data => setStore({"especies" : data.results}))
+			},
+
+			añadirFav : (id, nombre, direccion) =>{
+				let store = getStore()
+				if(!store.favoritos.includes(nombre)){
+					setStore({"favoritos": [... store.favoritos, nombre]})
+				}else{
+					const filtrado = store.favoritos.filter(e=>e!=nombre)
+					setStore({"favoritos": filtrado})
+				}
+
+				if(!store.id_favoritos.includes(id)){
+					setStore({"id_favoritos": [... store.id_favoritos, id]})
+				}else{
+					const filtrado = store.id_favoritos.filter(e=>e!=id)
+					setStore({"id_favoritos": filtrado})
+				}
+
+				if(!store.direccion_favoritos.includes(direccion)){
+					setStore({"direccion_favoritos": [... store.direccion_favoritos, direccion]})
+				}else{
+					const filtrado = store.direccion_favoritos.filter(e=>e!=direccion)
+					setStore({"direccion_favoritos": filtrado})
+				}
 			}
+// direccion
 
-
-			//https://starwars-visualguide.com/assets/img/people/${elem.uid}.jpg
 		}
 	};
 };
