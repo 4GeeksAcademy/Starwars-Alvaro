@@ -1,3 +1,102 @@
 /* 
     General Styles
 */
+body {
+    background-image: url("https://imgs.search.brave.com/ebv9tzxhoOcd-2B-H7HBVBdR4Zydpj0VlYtiAc_K6uE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Zm9uZG8taGlwZXJl/c3BhY2lhbC0zZC1l/ZmVjdG8tdHVuZWwt/dXJkaW1icmVfMTA0/OC0xMjUyNi5qcGc_/c2VtdD1haXNfaHli/cmlk");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo-1 {
+    border-bottom: 2px solid;
+    border-color: yellow;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo-nav{
+    border: none;
+    text-decoration: none;
+    padding-right: 3rem;
+    font-size: 4rem;
+    color: yellow;
+    
+}
+
+.logo {
+    height: inherit;
+    width: 100%;
+}
+
+.img-logo {
+    width: inherit;
+    height: 10rem;
+}
+
+.navegacion {
+    flex-wrap: wrap;
+    border-bottom: 2px solid;
+    border-color: yellow;
+    align-content: center;
+}
+
+.boton {
+    border-radius: 10px;
+    width: 15rem;
+    border-color: red;
+    background-color: darkgray;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: peru;
+}
+
+.fondo-nav {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: yellow;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 10rem;
+    background: rgb(93, 84, 98);
+    background: linear-gradient(90deg, rgba(93, 84, 98, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(27, 16, 1, 1) 100%);
+}
+
+.imagen-datos{
+    width: 10rem;
+    height: 13rem;
+}
+
+.img-info{
+    margin-top: 1rem;
+    height: 35rem;
+}
+
+.titulo-info{
+    border-bottom: 2px solid;
+    border-color: red;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+p{
+    color: white;
+}
+
+i{
+    height: 5rem;
+    width: 5rem;
+}
+
+.lista-fav{
+    width: 13rem;
+}
